@@ -4,5 +4,5 @@ from adminapp import views
 app_name = 'adminapp'
 
 urlpatterns = [
-
+    
 ]
