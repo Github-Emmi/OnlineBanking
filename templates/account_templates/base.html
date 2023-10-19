@@ -138,12 +138,8 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 			</div>
 		</div>
 	</div>
-	<div id="sticky-wrapper" class="sticky-wrapper" style="height: 137.406px;">
-		<div class="bussiness-main-menu-1x" style="width: 1280px;">	
-		<div class="container">
-			<div class="row">
 				<!---Header Start -->
-				{% include 'account_templates/includes/header.html' %}
+			{% block header %} {% include 'account_templates/includes/header.html' %} {% endblock header %}	
 	           <!-- Header END-->
 	
 	<style>
@@ -365,6 +361,8 @@ s0.parentNode.insertBefore(s1,s0);
 var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "integer", {validateOn:["blur", "change"]});
 var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword1", {minChars:6, maxChars: 12, validateOn:["blur", "change"]});
 </script>
+{% block custom_js %}
 
+{% endblock custom_js %}
 </html>
 </body>
